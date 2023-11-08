@@ -1,12 +1,12 @@
-class SeanBlock {
+class NitroBlock {
     getInfo() {
         return {
-            "id": "SeanBlock",
-            "name": "SeabBlock",
+            "id": "NitroBlock",
+            "name": "NitroBlock",
             "blocks": [{
-                    "opcode": "multi",
+                    "opcode": "substringy",
                     "blockType": "reporter",
-                    "text": "multiply [num1] by [num2]",
+                    "text": "letters [num1] through [num2] of [string]",
                     "arguments": {
                         "num1": {
                             "type": "number",
@@ -16,12 +16,17 @@ class SeanBlock {
                             "type": "number",
                             "defaultValue": "5"
                         },
-                        
+                        "string": {
+                            "type": "string",
+                            "defaultValue": "hello world"
+                        }
                     }
-                }],
-            }
+                },
+            }],
+        "menus": { //we will get back to this in a later tutorial
+        }
     };
-    multi({num1, num}) {
-        return (num1*num2);
+    substringy({num1, num2, string}) {
+        return string.substring(num1 - 1, num2);
     };
 }
