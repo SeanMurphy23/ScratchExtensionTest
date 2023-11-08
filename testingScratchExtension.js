@@ -2,7 +2,7 @@ class SeanBlock {
     getInfo() {
         return {
             "id": "SeanBlock",
-            "name": "SeabBlock",
+            "name": "SeanBlock",
             "blocks": [{
                     "opcode": "multi",
                     "blockType": "reporter",
