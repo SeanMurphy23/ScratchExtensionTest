@@ -1,8 +1,8 @@
-class NitroBlock {
+class SeanTest {
     getInfo() {
         return {
-            "id": "NitroBlock",
-            "name": "NitroBlock",
+            "id": "SeanTest",
+            "name": "SeanTest",
             "blocks": [{
                     "opcode": "substringy",
                     "blockType": "reporter",
