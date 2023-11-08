@@ -1,10 +1,10 @@
-class SeanTest {
+class SeanBlock {
     getInfo() {
         return {
-            "id": "SeanTest",
-            "name": "SeanTest",
+            "id": "SeanBlock",
+            "name": "SeabBlock",
             "blocks": [{
-                    "opcode": "substringy",
+                    "opcode": "multi",
                     "blockType": "reporter",
                     "text": "multiply [num1] by [num2]",
                     "arguments": {
@@ -16,13 +16,12 @@ class SeanTest {
                             "type": "number",
                             "defaultValue": "5"
                         },
+                        
                     }
                 }],
-            },
-        //"menus": { //we will get back to this in a later tutorial
-        //}
+            }
     };
-    substringy({num1, num2}) {
+    multi({num1, num}) {
         return (num1*num2);
     };
 }
