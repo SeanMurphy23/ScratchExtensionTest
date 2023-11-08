@@ -6,7 +6,7 @@ class SeanTest {
             "blocks": [{
                     "opcode": "substringy",
                     "blockType": "reporter",
-                    "text": "letters [num1] through [num2] of [string]",
+                    "text": "multiply [num1] by [num2]",
                     "arguments": {
                         "num1": {
                             "type": "number",
@@ -16,17 +16,13 @@ class SeanTest {
                             "type": "number",
                             "defaultValue": "5"
                         },
-                        "string": {
-                            "type": "string",
-                            "defaultValue": "hello world"
-                        }
                     }
                 }],
             },
         //"menus": { //we will get back to this in a later tutorial
         //}
     };
-    substringy({num1, num2, string}) {
-        return string.substring(num1 - 1, num2);
+    substringy({num1, num2}) {
+        return (num1*num2);
     };
 }
